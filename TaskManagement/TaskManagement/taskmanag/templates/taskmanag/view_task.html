@@ -1,0 +1,10 @@
+{% extends 'taskmanag/base.html' %}
+
+{% block content %}
+<div class="container mt-5">
+    <h2>{{ task.title }}</h2>
+    <p><strong>Description:</strong> {{ task.description }}</p>
+    <p><strong>Created at:</strong> {{ task.created_at }}</p>
+    <a href="{% url 'task_list' %}" class="btn btn-primary">Back to Task List</a>
+</div>
+{% endblock %}
